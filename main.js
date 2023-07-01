@@ -206,10 +206,12 @@ const states = [
   ]
   
 
-let text = "<select>"
-for (let state in states) {
 
-    text += "<option>" + state["code"].name + "</option>";
-}
-text += "</select>"
-document.getElementById("cars").innerHTML = text;
+  
+// let text = "<select>"
+// for (let i in states) {
+//     text += "<option>" + states[i]["code"] + "</option>";
+// }
+// text += "</select>"
+// document.getElementById("state1").innerHTML = text;
+// document.getElementById("state2").innerHTML = text;
