@@ -1,0 +1,215 @@
+const states = [
+    {
+      "code": "ak",
+      "neighborcodes": [ "wa" ]
+    },
+    {
+      "code": "al",
+      "neighborcodes": [ "fl", "ga", "ms", "tn" ]
+    },
+    {
+      "code": "ar",
+      "neighborcodes": [ "la", "mo", "ms", "ok", "tn", "tx" ]
+    },
+    {
+      "code": "az",
+      "neighborcodes": [ "ca", "co", "nm", "nv", "ut" ]
+    },
+    {
+      "code": "ca",
+      "neighborcodes": [ "az", "hi", "nv", "or" ]
+    },
+    {
+      "code": "co",
+      "neighborcodes": [ "az", "ks", "ne", "nm", "ok", "ut", "wy" ]
+    },
+    {
+      "code": "ct",
+      "neighborcodes": [ "ma", "ny", "ri" ]
+    },
+    {
+      "code": "dc",
+      "neighborcodes": [ "md", "va" ]
+    },
+    {
+      "code": "de",
+      "neighborcodes": [ "md", "nj", "pa" ]
+    },
+    {
+      "code": "fl",
+      "neighborcodes": [ "al", "ga" ]
+    },
+    {
+      "code": "ga",
+      "neighborcodes": [ "al", "fl", "nc", "sc", "tn" ]
+    },
+    {
+      "code": "hi",
+      "neighborcodes": [ "ca" ]
+    },
+    {
+      "code": "ia",
+      "neighborcodes": [ "il", "mn", "mo", "ne", "sd", "wi" ]
+    },
+    {
+      "code": "id",
+      "neighborcodes": [ "mt", "nv", "or", "ut", "wa", "wy" ]
+    },
+    {
+      "code": "il",
+      "neighborcodes": [ "ia", "in", "ky", "mo", "wi" ]
+    },
+    {
+      "code": "in",
+      "neighborcodes": [ "il", "ky", "mo", "wi" ]
+    },
+    {
+      "code": "ks",
+      "neighborcodes": [ "co", "mo", "ne", "ok" ]
+    },
+    {
+      "code": "ky",
+      "neighborcodes": [ "il", "in", "mo", "oh", "tn", "va", "wv" ]
+    },
+    {
+      "code": "la",
+      "neighborcodes": [ "ar", "ms", "tx" ]
+    },
+    {
+      "code": "ma",
+      "neighborcodes": [ "ct", "nh", "ny", "ri", "vt" ]
+    },
+    {
+      "code": "md",
+      "neighborcodes": [ "dc", "de", "pa", "va", "wv" ]
+    },
+    {
+      "code": "me",
+      "neighborcodes": [ "nh" ]
+    },
+    {
+      "code": "mi",
+      "neighborcodes": [ "in", "oh", "wi" ]
+    },
+    {
+      "code": "mn",
+      "neighborcodes": [ "ia", "nd", "sd", "wi" ]
+    },
+    {
+      "code": "mo",
+      "neighborcodes": [ "ar", "ia", "il", "ks", "ky", "ne", "ok", "tn" ]
+    },
+    {
+      "code": "ms",
+      "neighborcodes": [ "al", "ar", "la", "tn" ]
+    },
+    {
+      "code": "mt",
+      "neighborcodes": [ "id", "nd", "sd", "wy" ]
+    },
+    {
+      "code": "nc",
+      "neighborcodes": [ "ga", "sc", "tn", "va" ]
+    },
+    {
+      "code": "nd",
+      "neighborcodes": [ "mn", "mt", "sd" ]
+    },
+    {
+      "code": "ne",
+      "neighborcodes": [ "co", "ia", "ks", "mo", "sd", "wy" ]
+    },
+    {
+      "code": "nh",
+      "neighborcodes": [ "ma", "me", "vt" ]
+    },
+    {
+      "code": "nj",
+      "neighborcodes": [ "de", "ny", "pa" ]
+    },
+    {
+      "code": "nm",
+      "neighborcodes": [ "az", "co", "ok", "tx", "ut" ]
+    },
+    {
+      "code": "nv",
+      "neighborcodes": [ "az", "ca", "id", "or", "ut" ]
+    },
+    {
+      "code": "ny",
+      "neighborcodes": [ "ct", "ma", "nj", "pa", "vt" ]
+    },
+    {
+      "code": "oh",
+      "neighborcodes": [ "in", "ky", "mi", "pa", "wv" ]
+    },
+    {
+      "code": "ok",
+      "neighborcodes": [ "ar", "co", "ks", "mo", "nm", "tx" ]
+    },
+    {
+      "code": "or",
+      "neighborcodes": [ "ca", "id", "nv", "wa" ]
+    },
+    {
+      "code": "pa",
+      "neighborcodes": [ "de", "md", "nj", "ny", "oh", "wv" ]
+    },
+    {
+      "code": "ri",
+      "neighborcodes": [ "ct", "ma" ]
+    },
+    {
+      "code": "sc",
+      "neighborcodes": [ "ga", "nc" ]
+    },
+    {
+      "code": "sd",
+      "neighborcodes": [ "ia", "mn", "mt", "nd", "ne", "wy" ]
+    },
+    {
+      "code": "tn",
+      "neighborcodes": [ "al", "ar", "ga", "ky", "mo", "ms", "nc", "va" ]
+    },
+    {
+      "code": "tx",
+      "neighborcodes": [ "ar", "la", "nm", "ok" ]
+    },
+    {
+      "code": "ut",
+      "neighborcodes": [ "az", "co", "id", "nm", "nv", "wy" ]
+    },
+    {
+      "code": "va",
+      "neighborcodes": [ "dc", "ky", "md", "nc", "tn", "wv" ]
+    },
+    {
+      "code": "vt",
+      "neighborcodes": [ "ma", "nh", "ny" ]
+    },
+    {
+      "code": "wa",
+      "neighborcodes": [ "ak", "id", "or" ]
+    },
+    {
+      "code": "wi",
+      "neighborcodes": [ "ia", "il", "mi", "mn" ]
+    },
+    {
+      "code": "wv",
+      "neighborcodes": [ "ky", "md", "oh", "pa", "va" ]
+    },
+    {
+      "code": "wy",
+      "neighborcodes": [ "co", "id", "mt", "ne", "sd", "ut" ]
+    }
+  ]
+  
+
+let text = "<select>"
+for (let state in states) {
+
+    text += "<option>" + state["code"].name + "</option>";
+}
+text += "</select>"
+document.getElementById("cars").innerHTML = text;
